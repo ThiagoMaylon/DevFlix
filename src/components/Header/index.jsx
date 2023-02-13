@@ -1,13 +1,11 @@
-import { useState } from "react"
-import { MenuMobile } from "../MenuMobile";
 import { HeaderContainer, HeaderStyle } from "./style"
+import {RiMenu3Fill} from 'react-icons/ri';
 
-export const Header = () => {
-    const [isVisible, setIsVisible] = useState(true);
+
+export const Header = ({setIsVisible}) => {
     
     return(
         <>  
-            <MenuMobile />
             <HeaderStyle >
                 <HeaderContainer>
                     <div className="logo">
@@ -23,6 +21,11 @@ export const Header = () => {
                             </ul>
                         </nav>
                     </div>
+                    <RiMenu3Fill className="btn-menu-mobile" 
+                    onClick={() => setIsVisible(true)} 
+                    color="#FFFFFF"
+                    size={45}
+                    />
                 </HeaderContainer>
             </HeaderStyle>
         </>

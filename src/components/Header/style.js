@@ -4,13 +4,21 @@ export const HeaderStyle = styled.header`
     width: 100vw;
     height: 100px;
     background-color: #000;
+    .btn-menu-mobile{
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+        .btn-menu-mobile{
+            display: block;
+        }
+    }
 `
 export const HeaderContainer = styled.div`
     margin: auto;
     max-width: 900px;
     min-width: 200px;
     height: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,5 +77,9 @@ export const HeaderContainer = styled.div`
         & > .menu{
             display: none;
         }
+   
+    }
+    @media (max-width: 900px) {
+        padding: 0px 10px;
     }
 ` 

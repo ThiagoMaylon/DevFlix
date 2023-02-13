@@ -1,9 +1,9 @@
 import { MenuMobileContainer } from "./style"
 import {IoClose} from 'react-icons/io5'
-export const MenuMobile = () => {
+export const MenuMobile = ({isVisible, setIsVisible}) => {
     return(
-        <MenuMobileContainer>
-            <IoClose size={45} color="#fff"/>
+        <MenuMobileContainer visible={isVisible}>
+            <IoClose size={45} color="#fff" onClick={() => setIsVisible(false)}/>
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
