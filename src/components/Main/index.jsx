@@ -1,20 +1,26 @@
 import { useEffect, useState } from "react"
 import { MainContainer, MainStyle } from "./style"
 
+const urlApi = import.meta.env.VITE_API
+const apiKey = import.meta.env.VITE_API_KEY
+
+
+
 export const Main = () => {
     const [filmes, setFilmes] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.themoviedb.org/3/movie/01?api_key=6cf2121f3b2c45f94006f71c18155814&language=pt-BR').
+        fetch(`${urlApi}top_rated?${apiKey}&language=pt-BR`).
         then(response => response.json()).
-        then(response => setFilmes(response));
+        then(response => setFilmes(response.results));
     }, [])
-
     console.log(filmes)
     return(
         <MainStyle>
             <MainContainer>
-                {filmes.original_title}
+                {filmes.map((filme, index) => (
+                    <h1>{filme.title}</h1>
+                ))}
             </MainContainer>
         </MainStyle>
     )
