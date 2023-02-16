@@ -22,6 +22,7 @@ export const Main = () => {
                 <h2>Melhores Lançamentos</h2>
                 <div className="container-cards">
                     {filmes.map((filme, index) => <CardFilme 
+                    key={index}
                     photo={filme.poster_path}
                     title={filme.title}
                     />)}

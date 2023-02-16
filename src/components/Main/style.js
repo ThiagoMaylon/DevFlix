@@ -22,6 +22,6 @@ export const MainContainer = styled.div`
     .container-cards{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 25px;
+        gap: 30px;
     }
 `;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Home } from './page/Home/Home';
 import { Header } from "./components/Header";
 import { MenuMobile } from "./components/MenuMobile";
+import { Search } from "./page/Search";
 
 
 
@@ -14,6 +15,7 @@ export const App = () => {
             <Header setIsVisible={setIsVisible}/>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/search/:id" element={<Search />} />
             </Routes>
         </BrowserRouter>
     )

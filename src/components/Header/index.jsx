@@ -1,6 +1,7 @@
 import { HeaderContainer, HeaderStyle } from "./style"
 import {RiMenu3Fill} from 'react-icons/ri';
 import {InputPesquisa} from '../InputPesquisa'
+import { Link } from "react-router-dom";
 
 export const Header = ({setIsVisible}) => {
     
@@ -15,7 +16,7 @@ export const Header = ({setIsVisible}) => {
                     <div className="menu">
                         <nav>
                             <ul>
-                                <li><a href="#">Inicio</a></li>
+                                <li><Link to='/'>Inicio</Link></li>
                                 <li><a href="#">Sobre</a></li>
                                 <li><a href="#">Contato</a></li>
                             </ul>
