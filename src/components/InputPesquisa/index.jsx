@@ -4,12 +4,12 @@ import { BsSearch } from 'react-icons/bs'
 import { useState } from "react"
 
 export const InputPesquisa = () => {
-    const [movie, setMovie] = useState("")
+    const [search, setSearch] = useState("")
     return(
         <InputStyle>
-            <input type="text" onChange={event => setMovie(event.target.value)}/>
+            <input type="text" onChange={event => setSearch(event.target.value)}/>
             <button>
-                <Link to={`/search/${movie}`}>
+                <Link to={`/search/${search}`}>
                     <BsSearch color="#000000" size={20}/>
                 </Link>
             </button>

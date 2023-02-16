@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CardStyle } from "./style";
 
 export const CardFilme = ({photo, title}) => {
@@ -9,7 +10,7 @@ export const CardFilme = ({photo, title}) => {
             </div>
             <div className="container-itens">
                 <h2>{title}</h2>
-                <button>Detalhe</button>
+                <Link to={`/movie/${title}`}><button>Detalhe</button></Link>
             </div>
         </CardStyle>
     )

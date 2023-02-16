@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom"
 
 export const Search = () => {
-    const { id } = useParams();
+    const { search } = useParams();
     return(
-        <h1>{id}</h1>
+        <>
+            <h1>{search}</h1>
+            <h2>pesquisa</h2>
+        </>
     )
 } 
