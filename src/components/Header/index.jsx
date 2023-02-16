@@ -1,6 +1,6 @@
 import { HeaderContainer, HeaderStyle } from "./style"
 import {RiMenu3Fill} from 'react-icons/ri';
-
+import {InputPesquisa} from '../InputPesquisa'
 
 export const Header = ({setIsVisible}) => {
     
@@ -28,6 +28,7 @@ export const Header = ({setIsVisible}) => {
                     />
                 </HeaderContainer>
             </HeaderStyle>
+            <InputPesquisa />
         </>
     )
 }
