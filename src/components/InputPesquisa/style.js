@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const InputStyle = styled.form`
     width: 100vw;
     background-color: #000000; 
-    padding: 5px 0;
+    padding: 0px 10px 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
 
     input{
         border: none;
@@ -29,5 +30,6 @@ export const InputStyle = styled.form`
         border: 2px solid #FFFFFF;
         height: 34px;
         width: 40px;
+        margin-right: 10px;
     }
 `

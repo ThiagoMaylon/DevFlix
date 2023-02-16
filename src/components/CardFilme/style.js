@@ -8,6 +8,7 @@ export const CardStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
     img{
         width: 100%
     }

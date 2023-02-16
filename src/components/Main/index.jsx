@@ -17,7 +17,6 @@ export const Main = () => {
     console.log(filmes)
     return(
         <MainStyle>
-            
             <MainContainer>
                 <h2>Melhores Lançamentos</h2>
                 <div className="container-cards">

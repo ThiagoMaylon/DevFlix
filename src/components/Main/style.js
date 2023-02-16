@@ -10,7 +10,8 @@ export const MainStyle = styled.main`
 
 export const MainContainer = styled.div`
     max-width: 900px;
-    min-width: 200px;
+    min-width: 250px;
+    padding: 10px;
     margin: auto;
     
     h2{
@@ -21,7 +22,8 @@ export const MainContainer = styled.div`
     }
     .container-cards{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
         gap: 30px;
     }
 `;
