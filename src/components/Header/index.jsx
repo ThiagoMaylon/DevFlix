@@ -10,7 +10,7 @@ export const Header = ({setIsVisible}) => {
             <HeaderStyle >
                 <HeaderContainer>
                     <div className="logo">
-                        <a href="#">Dev Flix</a>
+                        <Link to='/'>Dev Flix</Link>
                     </div>
 
                     <div className="menu">
