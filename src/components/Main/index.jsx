@@ -24,6 +24,7 @@ export const Main = () => {
                     key={index}
                     photo={filme.poster_path}
                     title={filme.title}
+                    id={filme.id}
                     />)}
                 </div>
             </MainContainer>
